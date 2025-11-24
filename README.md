@@ -19,9 +19,9 @@
 * **Reporting: Automatic detection of items below reorder levels (Low Stock Alerts).**
 * **Department Allocation: Track which department (Kitchen, Laundry, etc.) is consuming the most resources.**
 * **Role-Based Access: Security separation between Admin (full access) and General Staff (transaction access only).**
-* 
-* 
+  
 
+  
 **Technologies Used:**
 
 
@@ -88,3 +88,4 @@
 
 * **Manually issue enough stock so the remaining quantity falls below the reorder level (e.g., below 5).**
 * **Navigate to "Reports" -> "Low Stock"; the item should appear there.**
+
