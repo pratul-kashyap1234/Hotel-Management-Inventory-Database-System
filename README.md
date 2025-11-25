@@ -1,4 +1,4 @@
-# 🏨 Hotel Management Inventory System (HMIS)
+ # 🏨 Hotel Management Inventory System (HMIS)
 
 ## 📖 1. Project Overview
 
@@ -106,8 +106,11 @@ Windows, macOS, or Linux.
 Language: Python 3.6+.
 ### Steps:
 Clone the Repository:git clone [https://github.com/pratul-kashyap1234/Hotel-Management-Inventory-Database-System](https://github.com/pratul-kashyap1234/Hotel-Management-Inventory-Database-System)
+
 Navigate to Directory:cd hotel-inventory-system
+
 Verify Python:python --version
+
 Output: Python 3.x.x
 
 ## 🎮 7. Usage GuideStarting the App
@@ -128,24 +131,33 @@ Select an option (1-4):
 **[ ] Test Case 1:** New Item Flow
       Add "Test Item" (Stock: 0, Reorder: 5).
       Verify: Status is "LOW STOCK!".
+      
 **[ ] Test Case 2:** Stock In
       Update "Test Item" -> IN -> Qty 20.
       Verify: Stock is 20, Status "OK".
+      
 **[ ] Test Case 3:** Stock Out
      Update "Test Item" -> OUT -> Qty 5.
      Verify: Stock is 15.
+     
 **[ ] Test Case 4:** Safety Check
      Update "Test Item" -> OUT -> Qty 100.
      Verify: System error "Insufficient stock!", Stock remains 15.
      
 ## ⚠️ 10. Limitations & Known Issues
  **Data Volatility:** Data is lost upon application closure (In-Memory limitation).
+ 
  **Input Sensitivity:** Inputs must be exact (e.g., "10" not "Ten") or the program will crash (no try/except blocks).
+ 
  **Concurrency:** Single-user only; not networked.🔮 
 
 ## 11. Future Enhancements (v2.0)💾
 File Persistence: Save to .json or .csv to retain data.
+
 🔍 Search: Find items by Name (e.g., "Soap").
+
 📜 Audit Log: Track history of all transactions.
+
 🖥️ GUI: Graphical interface using Tkinter.
+
 
