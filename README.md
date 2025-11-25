@@ -101,50 +101,51 @@ products = [
 ]
 ```
 
-Algorithmic LogicSearch: Updates use a Linear Search ($O(n)$) to locate products by ID.Persistence: Variables are global. Note: RAM is volatile; data clears when the script terminates.
-💻 6. Installation & SetupPrerequisitesOS: 
+## 💻 6. Installation & SetupPrerequisitesOS: 
 Windows, macOS, or Linux.
 Language: Python 3.6+.
-Steps:
+### Steps:
 Clone the Repository:git clone [https://github.com/pratul-kashyap1234/Hotel-Management-Inventory-Database-System](https://github.com/pratul-kashyap1234/Hotel-Management-Inventory-Database-System)
 Navigate to Directory:cd hotel-inventory-system
 Verify Python:python --version
-# Output: Python 3.x.x
+Output: Python 3.x.x
 
-🎮 7. Usage GuideStarting the AppRun the main script:Bashpython main.py
-Main Menu:
+## 🎮 7. Usage GuideStarting the App
+Run the main script:python HotEL.py
+### Main Menu:
 === HOTEL INVENTORY SYSTEM (In-Memory) ===
 1. Add New Item
 2. View Inventory
 3. Update Stock (In/Out)
 4. Exit
 Select an option (1-4):
-workflows
-Add Product: Enter Name, Category ID, Price, and Reorder Level.
-View Inventory: Check the table for "LOW STOCK!" warnings.
-Update Stock: Select Product ID -> Type IN or OUT -> Enter Quantity.
+### workflows
+**Add Product:** Enter Name, Category ID, Price, and Reorder Level.
+**View Inventory:** Check the table for "LOW STOCK!" warnings.
+**Update Stock:** Select Product ID -> Type IN or OUT -> Enter Quantity.
 
-🧪 9. Testing InstructionsManual testing script to verify system integrity:
-[ ] Test Case 1: New Item Flow
+## 🧪 9. Testing InstructionsManual testing script to verify system integrity:
+**[ ] Test Case 1:** New Item Flow
       Add "Test Item" (Stock: 0, Reorder: 5).
       Verify: Status is "LOW STOCK!".
-[ ] Test Case 2: Stock In
+**[ ] Test Case 2:** Stock In
       Update "Test Item" -> IN -> Qty 20.
       Verify: Stock is 20, Status "OK".
-[ ] Test Case 3: Stock Out
+**[ ] Test Case 3:** Stock Out
      Update "Test Item" -> OUT -> Qty 5.
      Verify: Stock is 15.
-[ ] Test Case 4: Safety Check
+**[ ] Test Case 4:** Safety Check
      Update "Test Item" -> OUT -> Qty 100.
      Verify: System error "Insufficient stock!", Stock remains 15.
      
-⚠️ 10. Limitations & Known Issues
-       Data Volatility: Data is lost upon application closure (In-Memory limitation).
-       Input Sensitivity: Inputs must be exact (e.g., "10" not "Ten") or the program will crash (no try/except blocks).
-       Concurrency: Single-user only; not networked.🔮 
+## ⚠️ 10. Limitations & Known Issues
+ **Data Volatility:** Data is lost upon application closure (In-Memory limitation).
+ **Input Sensitivity:** Inputs must be exact (e.g., "10" not "Ten") or the program will crash (no try/except blocks).
+ **Concurrency:** Single-user only; not networked.🔮 
 
-11. Future Enhancements (v2.0)💾
-    File Persistence: Save to .json or .csv to retain data.
-    🔍 Search: Find items by Name (e.g., "Soap").
-    📜 Audit Log: Track history of all transactions.
-    🖥️ GUI: Graphical interface using Tkinter.
+## 11. Future Enhancements (v2.0)💾
+File Persistence: Save to .json or .csv to retain data.
+🔍 Search: Find items by Name (e.g., "Soap").
+📜 Audit Log: Track history of all transactions.
+🖥️ GUI: Graphical interface using Tkinter.
+
